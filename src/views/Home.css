@@ -1,0 +1,89 @@
+.articles-container {
+  box-sizing: border-box;
+  max-width: 700px;
+  margin: 30px auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.articles-container ul {
+  margin: 0;
+  padding: 0;
+}
+.button-selectors {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 5px;
+}
+.button-selectors button {
+  margin: 5px;
+  font-size: 14px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.button-selectors button:hover {
+  background-color: rgb(255, 255, 250);
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 15px;
+}
+
+.search-box {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 5px;
+  margin-left: 3px;
+  padding: 7px;
+}
+
+.order-by-button {
+  border: 2px solid rgb(255, 255, 255);
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.filter-text {
+  padding-top: 5px;
+  font-size: 28px;
+  color: grey;
+}
+
+.hero-section {
+  box-sizing: border-box;
+  background: #ffffff;
+  margin-bottom: 15px;
+  width: 100%;
+  color: #2d2d2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 5px;
+}
+
+.topic-title {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 720px) {
+  .articles-container {
+    margin: 90px auto;
+  }
+
+}

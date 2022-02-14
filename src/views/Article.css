@@ -1,0 +1,90 @@
+.card-page-article {
+  display: flex;
+  margin: auto;
+  max-width: 700px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  border: solid 1px rgb(230, 230, 230);
+  color: #212427;
+  box-shadow: 0 0 0.7142857142857143rem #cccccc;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+ 
+}
+
+.card-page-article p {
+  font-size: 20px;
+  padding: 0 20px;
+  line-height: 35px;
+}
+
+.article-page-title {
+  font-size: 35px;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 85%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.border-title {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgb(222, 222, 222);
+  width: 150px;
+}
+
+.profile-page-picture {
+  margin-top: 15px;
+  width: 190px;
+  height: 190px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 180px;
+}
+
+.vote-container {
+  display: flex;
+  font-size: 18px;
+  align-self: flex-start;
+  color: rgb(159, 159, 159);
+}
+
+.votes-up {
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.votes-down {
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+  color: red;
+  cursor: pointer;
+}
+
+span {
+  padding: 10px 0;
+}
+
+
+@media only screen and (min-width: 720px) {
+  .card-page-article {
+    margin:  auto;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+
+}

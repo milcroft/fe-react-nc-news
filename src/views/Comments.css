@@ -1,0 +1,42 @@
+.comments-page-container {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+
+.comments-form-container {
+  background-color: #fff;
+  margin: 2% 0;
+  height: 140px;
+  padding: 40px;
+  border: solid 1px rgb(230, 230, 230);
+  border-radius: 15px;
+}
+
+.comments-text {
+  width: 97%;
+  height: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid lightgrey;
+}
+
+.btn-container {
+  display: flex;
+}
+.comment-btn {
+  width: 125px;
+  height: 30px;
+  align-self: center;
+  margin: auto;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
