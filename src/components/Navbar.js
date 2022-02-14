@@ -51,7 +51,6 @@ export default function Navbar() {
       setActivate(true);
     }
   };
-  console.log(isActive, activate);
 
   return (
     <>
