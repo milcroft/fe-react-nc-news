@@ -37,12 +37,15 @@
 }
 
 .item a:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(137, 137, 137);
+  color: rgb(38, 38, 38);
+  text-decoration: none;
+  background-color: #eaecfc;
 }
 
 .active-link {
-  color: rgb(53, 53, 53);
+  color: rgb(38, 38, 38);
+  text-decoration: none;
+  background-color: #eaecfc;
 }
 
 .item {
@@ -82,7 +85,7 @@
   font-size: 20px;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 720px) {
   .navbar {
     flex-direction: row;
     color: black;
@@ -95,7 +98,7 @@
     margin-bottom: 20px;
     margin-top: 20px;
     flex-direction: row;
-    margin-left: 50px;
+    margin-left: 140px;
   }
   .item a {
     flex: 1;
@@ -141,6 +144,12 @@
     text-decoration: underline;
   }
 
+  .login-link:hover {
+    text-decoration: underline;
+    color: rgb(38, 38, 38);
+    text-decoration: none;
+  }
+
   .mobile-icon {
     display: none;
   }
@@ -150,12 +159,14 @@
 }
 
 .active-link a {
-  color: rgb(255, 255, 255);
+  color: rgb(38, 38, 38);
   text-decoration: none;
-  background-color: rgb(137, 137, 137);
+  background-color: #eaecfc;
+  opacity: 0.7;
 }
 
 .nav-profile-picture {
+  border-radius: 50%;
   height: 32px !important;
   width: 32px !important;
 }

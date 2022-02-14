@@ -73,17 +73,9 @@ export default function Home() {
       {!isError && (
         <>
           <div className='articles-container'>
-            <div className='hero-section'>
-              <h1 className='topic-title'>{!topic ? 'News' : topic}</h1>
-            </div>
+         
 
-            <div className='button-selectors'>
-              <button onClick={() => setSortBy('votes')}>Top</button>
-              <button onClick={() => setSortBy('created_at')}>Latest</button>
-              <button onClick={() => setSortBy('comment_count')}>
-                Discussed
-              </button>
-
+            <div className='search-container'>
               <input
                 className='search-box'
                 type='text'
@@ -94,6 +86,21 @@ export default function Home() {
                 {order === 'desc' ? <RiSortDesc /> : <RiSortAsc />}
               </button>
             </div>
+
+          
+
+            <div className='button-selectors'>
+              <button onClick={() => setSortBy('votes')}>Top</button>
+              <button onClick={() => setSortBy('created_at')}>Latest</button>
+              <button onClick={() => setSortBy('comment_count')}>
+                Discussed
+              </button>
+            </div>
+            <div className='hero-section'>
+              <h1 className='topic-title'>{!topic ? 'News' : topic}</h1>
+            </div>
+
+
             {isLoading && <Loader />}
             <div className='article-list'>
               <ul>

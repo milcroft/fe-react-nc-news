@@ -111,22 +111,23 @@ export default function Navbar() {
               );
             })}
           </div>
-          {!authUser ? (
-            <div className='login-link'>
-              <Link to={`/login`}>Login</Link>
-            </div>
-          ) : (
-            <div className='login-link'>
-              <Link to={`/logout`}>
-                <img
-                  className='nav-profile-picture'
-                  src={require(`../images/profile-picture-${username}.png`)}
-                  alt={username}
-                />
-              </Link>
-            </div>
-          )}
-          <div className={isToggle ? 'login' : 'hide-nav'}></div>
+          <div className={isToggle ? 'login' : 'topics-nav hide-nav'}>
+            {!authUser ? (
+              <div className='login-link'>
+                <Link to={`/login`}>Login</Link>
+              </div>
+            ) : (
+              <div className='login-link'>
+                <Link to={`/logout`}>
+                  <img
+                    className='nav-profile-picture'
+                    src={require(`../images/profile-picture-${username}.png`)}
+                    alt={username}
+                  />
+                </Link>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </>
